@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+    <!--
+        relative：不脱离文档流，有定位属性，left/right; top/bottom；z-index层级; 相当定位设置定位属性时，元素原始位置占据不发生变化。
+        absolute、fixed: 脱离文档流，有定位属性，left/right; top/bottom；z-index层级
+        absolute: 参考父级是最接近的定位元素（position: relative/absolute/fixed）;找不到则为body
+        fixed：参考父级是可视窗口，不随滚动条滚动而滚动。
+        z-index属性：定位元素才有此属性；大于等于1的自然数，数字越大层级越高。
+        定位元素在同一个层级条件下，代码html代码越下面，层级越高
+    -->
+    <p style="position: relative; z-index: 9; left: 2px; color: #fff;">1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+    <p>11</p>
+    <p>12</p>
+    <p>13</p>
+    <p>14</p>
+    <p>15</p>
+    <p>16</p>
+    <p>17</p>
+    <p>18</p>
+    <p>19</p>
+    <p style="position: absolute; left: 0; top:0; z-index: 7; background: #f00;">100</p>
+    <p style="position: fixed; left: 20px; top:20px; z-index: 6; background: #0f0;">200</p>
+    <p>20</p>
+    <p>21</p>
+    <p>22</p>
+    <p>23</p>
+    <p>24</p>
+</body>
+</html>
